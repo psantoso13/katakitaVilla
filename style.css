@@ -1,0 +1,334 @@
+@font-face {
+  font-family: "garetBook";
+  src: url("./fonts/Garet-Book.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "garetHeavy";
+  src: url("./fonts/Garet-Heavy.ttf");
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "mangiola";
+  src: url("./fonts/Mangiola-Regular.ttf");
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(to right, #d9f99d, #22d3ee);
+  font-family: garetBook, sans-serif;
+}
+
+img {
+  background: #f1f1fa;
+  width: 800px;
+  height: 360px;
+  display: block;
+  margin: 10px auto;
+  border: 0;
+  border-radius: 20px;
+}
+
+.container {
+  width: 860px;
+  margin: auto;
+  padding-bottom: 20px;
+  /* background-color: coral; */
+}
+
+.menu {
+  width: 860px;
+  height: 50px;
+  display: flex;
+  background-color: aquamarine;
+  justify-content: space-around;
+  align-items: center;
+  font-family: garetHeavy;
+  font-size: 1.25rem;
+  position: fixed;
+  z-index: 1000;
+}
+
+.heroImg {
+  width: 800px;
+  height: 600px;
+}
+
+.katakita,
+.tourism,
+.photo {
+  width: 800px;
+  margin: auto;
+}
+
+.katakita p,
+.tourism p,
+.photo p {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 30px;
+  background-color: bisque;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.25rem;
+}
+
+/* nearby tourism started */
+
+#imgLeft1,
+#imgLeft2,
+#imgLeft3 {
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+#imgRight1,
+#imgRight2,
+#imgRight3 {
+  opacity: 0;
+  transform: translateX(20%);
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+
+#imgLeft1.show,
+#imgLeft2.show,
+#imgLeft3.show,
+#imgRight1.show,
+#imgRight2.show,
+#imgRight3.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* nearby tourism ended */
+
+
+/* photo galery started */
+.photoContainer {
+  width: 800px;
+  height: 100%;
+  margin: auto;
+}
+
+/* style villagaleri */
+
+.villagaleri {
+  width: 800px;
+  margin-top: 20px;
+  border: 5px solid whitesmoke;
+  float: left;
+  z-index: 100;
+  line-height: 0;
+  overflow: auto;
+  /* background-color: whitesmoke; */
+}
+
+.extra {
+  margin-bottom: 10px;
+  width: 780px;
+  height: 595px;
+}
+
+.mini {
+  padding-left: 35px;
+}
+
+.thumb {
+  width: 180px;
+  height: 120px;
+  float: left;
+  border: 2px solid whitesmoke;
+  /* box-sizing: border-box; */
+}
+
+.thumb:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+@keyframes gambarFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.gambarFade {
+  opacity: 0;
+  animation: gambarFadeIn 0.5s forwards;
+}
+
+.gambarAktif {
+  opacity: 0.7;
+}
+
+.photoBottom {
+  display: flex;
+  width: 800px;
+  margin: auto;
+}
+
+.photoBottom p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.25rem;
+}
+
+/* photo galery ended */
+
+/* faq started */
+
+.faqContainer {
+  width: 800px;
+  margin: auto;
+}
+
+.faqBox {
+  width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* @media (max-width: 768px) {
+  .faqContainer,
+  .faqBox {
+    width: 375px;
+  }
+} */
+
+.title1,
+.title2,
+.title3,
+.title4,
+.title5,
+.title6 {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.125rem;
+}
+
+/* @media (max-width: 768px) {
+  .title1,
+  .title2,
+  .title3,
+  .title4,
+  .title5,
+  .title6 {
+    font-size: 0.875rem;
+  }
+} */
+
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6 {
+  display: none;
+  margin-bottom: 25px;
+  text-align: justify;
+  background-color: #c3f4d5;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 1.125rem;
+}
+
+/* @media (max-width: 768px) {
+  .text1,
+  .text2,
+  .text3,
+  .text4,
+  .text5,
+  .text6 {
+    font-size: 0.875rem;
+    padding: 5px;
+  }
+} */
+
+.faq {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.faqImg {
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px 0px 0px;
+}
+
+.faqIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.faqIcon:hover {
+  cursor: pointer;
+}
+
+/* faq ended */
+
+.info {
+  width: 860px;
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+}
+
+.infoBox {
+  width: 800px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: garetHeavy;
+  font-size: 1.25rem;
+}
+
+.infoBox a span{
+  background-color:bisque;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.satisfaction {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.satisfactionImg {
+  width: 200px;
+  height: 200px;
+}
+
+.hero,
+.katakita,
+.tourism,
+.photo,
+.faqContainer,
+.info {
+  padding-top: 5.5rem;
+}
