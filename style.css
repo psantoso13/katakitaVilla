@@ -27,7 +27,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #d9f99d, #22d3ee);
+  background-image: linear-gradient(to right, #fbf0d0, #f9c49e);
   font-family: garetBook, sans-serif;
 }
 
@@ -52,13 +52,23 @@ img {
   width: 860px;
   height: 50px;
   display: flex;
-  background-color: aquamarine;
+  /* background-color: #f9c49e; */
   justify-content: space-around;
   align-items: center;
   font-family: garetHeavy;
   font-size: 1.25rem;
   position: fixed;
   z-index: 1000;
+}
+
+.menuBox {
+  background-color: #fbf0d0;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.menuBox:hover {
+  background-color: #f9c49e;
 }
 
 .heroImg {
@@ -80,7 +90,7 @@ img {
   align-items: center;
   width: 800px;
   height: 30px;
-  background-color: bisque;
+  background-color: #f9c49e;
   border-radius: 10px;
   padding: 20px;
   font-size: 1.25rem;
@@ -312,6 +322,10 @@ img {
   background-color:bisque;
   padding: 5px 10px;
   border-radius: 10px;
+}
+
+.infoBox a span:hover {
+  background-color:#f9c49e;
 }
 
 .satisfaction {
