@@ -56,7 +56,7 @@ img {
   justify-content: space-around;
   align-items: center;
   font-family: garetHeavy;
-  font-size: 1.25rem;
+  font-size: 1rem;
   position: fixed;
   z-index: 1000;
 }
@@ -81,6 +81,24 @@ img {
 .photo {
   width: 800px;
   margin: auto;
+}
+.promo {
+  width: 800px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.promo p {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 30px;
+  padding: 20px;
+  font-size: 1.25rem;
+}
+
+.promo p a{
+  font-weight: 700;
 }
 
 .katakita p,
